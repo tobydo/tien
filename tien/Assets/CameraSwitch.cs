@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ public class CameraSwitch : MonoBehaviour
 {
     public Camera cameraOne;
     public Camera cameraTwo;
-    public bool cameraOneOn = true;
+    public bool cameraOneOn;
     
     
     // Start is called before the first frame update
@@ -27,8 +27,8 @@ public class CameraSwitch : MonoBehaviour
             cameraOneOn = true;
         }
         if(Input.GetKeyDown(KeyCode.D) && cameraOneOn ==true){
-            cameraOne.enabled = false;
-            cameraTwo.enabled = true;
+            cameraOne.enabled = true;
+            cameraTwo.enabled = false;
             cameraOneOn = false;
         }
     }
