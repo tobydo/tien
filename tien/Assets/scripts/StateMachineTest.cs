@@ -71,7 +71,7 @@ public class StateMachineTest : MonoBehaviour
     {
         talking.text = lines[currentLine];
 
-          if(Input.GetKeyDown(KeyCode.W)){
+          if(Input.GetKeyDown(KeyCode.Alpha1)){
              current = Cameras.One;
             
                 foreach(Camera camera in cameraOn){
@@ -81,7 +81,7 @@ public class StateMachineTest : MonoBehaviour
             
            
           }
-        if(Input.GetKeyDown(KeyCode.D)) {
+        if(Input.GetKeyDown(KeyCode.Alpha2)) {
           current = Cameras.Two;
             
                 foreach(Camera camera in cameraOn){
@@ -90,7 +90,7 @@ public class StateMachineTest : MonoBehaviour
             currentCamera.enabled = true;
           
         }
-        if(Input.GetKeyDown(KeyCode.A)) {
+        if(Input.GetKeyDown(KeyCode.Alpha3)) {
            current = Cameras.Three;
             
                 foreach(Camera camera in cameraOn){
