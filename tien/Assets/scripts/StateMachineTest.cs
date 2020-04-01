@@ -78,7 +78,8 @@ public class StateMachineTest : MonoBehaviour
                 camera.enabled = false;
                 }
             currentCamera.enabled = true;
-            Dialogue();
+            
+           
           }
         if(Input.GetKeyDown(KeyCode.D)) {
           current = Cameras.Two;
@@ -87,7 +88,7 @@ public class StateMachineTest : MonoBehaviour
                 camera.enabled = false;
                 }
             currentCamera.enabled = true;
-            Dialogue();
+          
         }
         if(Input.GetKeyDown(KeyCode.A)) {
            current = Cameras.Three;
@@ -96,6 +97,10 @@ public class StateMachineTest : MonoBehaviour
                 camera.enabled = false;
                 }
             currentCamera.enabled = true;
+            
+        }
+
+        if(Input.GetMouseButton(0)){
             Dialogue();
         }
 
