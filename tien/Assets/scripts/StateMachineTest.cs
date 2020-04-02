@@ -7,11 +7,14 @@ using UnityEngine.UI;
 
 public class StateMachineTest : MonoBehaviour
 {
+    public KeyCode buttonOne;
+    public KeyCode buttonTwo;
+    public KeyCode buttonThree;
     public TextAsset Scene;
         string [] lines;
     string  speaker;
     public TextMeshProUGUI talking;
-    int currentLine;
+    public int currentLine;
     public enum Characters{
         Tien,
         Duc,
@@ -70,9 +73,9 @@ public class StateMachineTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        talking.text = lines[currentLine];
+       // talking.text = lines[currentLine];
 
-          if(Input.GetKeyDown(KeyCode.Alpha1)){
+          if(Input.GetKeyDown(buttonOne)){
              current = Cameras.One;
             
                 foreach(Camera camera in cameraOn){
@@ -82,7 +85,7 @@ public class StateMachineTest : MonoBehaviour
             
            
           }
-        if(Input.GetKeyDown(KeyCode.Alpha2)) {
+        if(Input.GetKeyDown(buttonTwo)) {
           current = Cameras.Two;
             
                 foreach(Camera camera in cameraOn){
@@ -91,7 +94,7 @@ public class StateMachineTest : MonoBehaviour
             currentCamera.enabled = true;
           
         }
-        if(Input.GetKeyDown(KeyCode.Alpha3)) {
+        if(Input.GetKeyDown(buttonThree)) {
            current = Cameras.Three;
             
                 foreach(Camera camera in cameraOn){
@@ -112,7 +115,7 @@ public class StateMachineTest : MonoBehaviour
 
     void Dialogue() {
             
-        Debug.Log("we can talk");
+        //Debug.Log("we can talk");
         speaker = lines[currentLine].Split(':')[0];
         string currentText = lines[currentLine].Split(':')[1];
 
