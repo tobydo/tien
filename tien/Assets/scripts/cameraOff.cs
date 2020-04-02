@@ -7,9 +7,10 @@ public class cameraOff : MonoBehaviour
     public Camera one;
     public Camera two;
     // Start is called before the first frame update
-    void TurnOff(){
-        one.enabled = false;
+    public void TurnOff(){
         two.enabled = true;
+        one.enabled = false;
+        
 
     }
 }
