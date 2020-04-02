@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ public class StateMachineTest : MonoBehaviour
     public TextAsset Scene;
         string [] lines;
     string  speaker;
-    public Text talking;
+    public TextMeshProUGUI talking;
     int currentLine;
     public enum Characters{
         Tien,
