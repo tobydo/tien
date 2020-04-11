@@ -38,8 +38,8 @@ ModelImporter:
       name: Sitting Yell
       takeName: mixamo.com
       internalID: 0
-      firstFrame: 0
-      lastFrame: 99
+      firstFrame: 16
+      lastFrame: 77
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
