@@ -10,7 +10,7 @@ public class StateMachineTest : MonoBehaviour
     public KeyCode buttonOne;
     public KeyCode buttonTwo;
     public KeyCode buttonThree;
-    // public TextAsset Scene;
+     public TextAsset Scene;
         string [] lines;
     string  speaker;
     public TextMeshProUGUI talking;
@@ -84,7 +84,7 @@ public class StateMachineTest : MonoBehaviour
             currentCamera.enabled = true;
             
            
-          }
+          }                                 
         if(Input.GetKeyDown(buttonTwo)) {
           current = Cameras.Two;
             
