@@ -10,7 +10,7 @@ public class StateMachineTest : MonoBehaviour
     public KeyCode buttonOne;
     public KeyCode buttonTwo;
     public KeyCode buttonThree;
-    public TextAsset Scene;
+    // public TextAsset Scene;
         string [] lines;
     string  speaker;
     public TextMeshProUGUI talking;
@@ -129,4 +129,18 @@ public class StateMachineTest : MonoBehaviour
         
 
     }
+
+    public void Switch(){
+       current = Cameras.Three;
+            
+                foreach(Camera camera in cameraOn){
+                camera.enabled = false;
+                }
+            currentCamera.enabled = true;
+             buttonOne = KeyCode.None;
+     buttonTwo= KeyCode.None ;
+        }
+
+       
+    
 }
